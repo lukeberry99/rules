@@ -1,0 +1,32 @@
+{
+    "name": "automise/rules",
+    "description": "A generic package for discerning and modifying business rules",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Luke Berry",
+            "email": "luke@automise.co.uk"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "illuminate/support": "^5.8@dev",
+        "php": "^7.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.5@dev"
+    },
+    "autoload": {
+      "psr-4": {
+        "Automise\\Rules\\": "src"
+      }
+    },
+    "extras": {
+      "laravel": {
+        "providers": [
+          "Automise\\Rules\\RulesServiceProvider"
+        ]
+      }
+    }
+}
